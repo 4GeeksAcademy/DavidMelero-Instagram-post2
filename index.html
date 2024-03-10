@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <!-- cdin bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- estilos propios -->
+  <link rel="stylesheet" href="styles.css">
+  <title>Posts Instagram</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0  color-text-instagram">
+                <li class="nav-item color-text-instagram">
+                  <a class="nav-link  color-text-instagram" aria-current="page" href="#" >
+                    <span class="me-2"><i class="fa-brands fa-instagram   color-text-instagram"></i></span>Instagram</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-2">
+              <form class="d-flex" role="search">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Create a new post
+                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-lg-end">
+                    <li><button class="dropdown-item" type="button">Action</button></li>
+                    <li><button class="dropdown-item" type="button">Another action</button></li>
+                    <li><button class="dropdown-item" type="button">Something else here</button>
+                    </li>
+                    <hr>
+                    <li><button class="dropdown-item" type="button" style="color: red;">login
+                        out</button></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+          </div>
+      </div>
+      </nav>
+    </div>
+
+
+    <!-- navegador de imagenes  -->
+
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation ">
+        <button class="nav-link active button-carrusell" id="home-tab" data-bs-toggle="tab"
+          data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i
+            class="fa-solid fa-map"></i></button>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <button class="nav-link button-carrusell" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
+          aria-selected="false"><i class="fa-solid fa-layer-group"></i></button>
+      </li>
+    </ul>
+
+    <!-- imagenes a 3 -->
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <!-- prima fila de imagenes -->
+        <div class="row mt-4 mb-3">
+          <div class="col">
+            <img src="imgs/333.jpg" alt="..." style="max-width: 100%; height: 100%;">
+          </div>
+          <div class="col">
+            <img src="imgs/vista-brumosa-lago-montanas-barco.jpg" style="max-width: 100%;" alt="...">
+          </div>
+          <div class="col">
+            <img src="imgs/mini-coupe-alta-velocidad-carretera-luces-delanteras-encendidas.jpg"
+              style="max-width: 100%; height: auto;" alt="...">
+          </div>
+        </div>
+
+        <!-- second-imagen -->
+        <div class="row mb-3">
+          <div class="col">
+            <img src="imgs/andar-bicicleta-motocicleta-bosque.jpg" alt="..." style="max-width: 100%; height: auto;">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <img src="imgs/El_Golfolagoverde.jpg" style="max-width: 100%; height: 100%;" alt="...">
+          </div>
+          <div class="col">
+            <img src="imgs/pngtree-an-animated-cartoon-lion-sitting-on-a-white-background-picture-image_2693334.jpg"
+              style="max-width: 100%; height: auto;" alt="...">
+          </div>
+        </div>
+
+        <!-- third-imagen -->
+        <div class="row">
+          <div class="col">
+            <img src="imgs/vlcsnap-2022-01-19-11h45m30s514-450x253-1-450x253.jpg" alt="..." style="max-width: 100%; height: 100%;">
+          </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            <img src="imgs/descarga.jpeg" style="max-width: 100%; height: 100%;" alt="...">
+          </div>
+          <div class="col">
+            <img src="imgs/unnamed.jpg"
+              style="max-width: 100%; height: auto;" alt="...">
+          </div>
+        </div>
+      </div>
+
+      <!-- imagenes con scrooll -->
+    </div class="row">
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+      <!-- card1 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6 ">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>My crazy lion</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              1/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/333.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+     
+      <!-- card2 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>boat on sea</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              2/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/vista-brumosa-lago-montanas-barco.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-3 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>porsche</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              3/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/mini-coupe-alta-velocidad-carretera-luces-delanteras-encendidas.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-4 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>racing</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              4/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-5 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>beautiful</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              5/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/El_Golfolagoverde.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-6 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>lion frog</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              6/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/pngtree-an-animated-cartoon-lion-sitting-on-a-white-background-picture-image_2693334.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- card-7 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>the girl</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              7/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/vlcsnap-2022-01-19-11h45m30s514-450x253-1-450x253.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-8 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>crazy control</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              8/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/descarga (1).jpeg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- card-9 -->
+      <div>
+        <div class="card mb-3 mt-2 mx-auto col-md-6">
+          <div class="d-flex d-flex justify-content-between bg-light">
+            <div class="ms-2 ">
+              <h3>perfection</h3>
+            </div>
+            <div class=" me-3 mt-1 number-of-pag">
+              9/9
+            </div>
+          </div>
+          <svg class="d-block user-select-none" width="" height="0" aria-label="Placeholder: Image cap"
+            focusable="false" role="img" preserveAspectRatio="xMidYMid slice"
+            style="font-size:1.125rem;text-anchor:middle">
+            <text x="50%" y="50%" dy=".3em"></text>
+          </svg>
+          <img src="imgs/unnamed.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text">204 Likes</p>
+          </div>
+          <div class="card-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam vel ratione accusantium sapiente quod
+              repudiandae ad obcaecati asperiores velit voluptatem.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+   
+    <!-- modal fuera de todo -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <h4>Caption:</h4>
+            <textarea name="textarea" id="textarea" cols="60" rows="3"
+              placeholder="Add the caption of your post here"></textarea>
+            <br>
+            <div class="mt-2">
+              <button type="button"><i class="fa-solid fa-camera"></i></button>
+              <button><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- fin de la modal -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
